@@ -54,3 +54,6 @@ Use `.agent/workflows/implement-story.md` for every story. Plan first and stop f
 ## Definition of done
 
 Acceptance criteria met; unit and integration tests; RLS and role checks reviewed; typecheck and build pass; browser verification with real role accounts on the same visit; error, loading and empty states exercised; no secrets exposed; no placeholder copy; implementation report entry written with honest limitations.
+
+## Design references
+Stitch screens in design/reference/ show visual direction only. Copy, status wording and behaviour in design/review-notes.md and docs/status-wording.md override anything shown in a screen. Read both before any UI story.

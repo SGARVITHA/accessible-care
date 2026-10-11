@@ -11,3 +11,5 @@ Input: a story ID from `docs/BACKLOG.md` (for example E2-4).
 7. If the story touches authorisation or data access, run the rls-review workflow.
 8. Prepare the handoff: summary of changes, files, migrations, tests run with results, and a human verification checklist naming each role to sign in as and the exact steps and expected results.
 9. STOP. Do not merge. The human reviews the diff and performs the browser verification.
+
+For any UI story, also read design/review-notes.md and docs/status-wording.md before planning. They override the Stitch screens.
