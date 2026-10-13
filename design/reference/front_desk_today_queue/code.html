@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "warning": "#B45309", "danger-bg": "#FEE2E2", "surface-container-low": "#e9f7f3", "on-primary-fixed-variant": "#00504a", "success-bg": "#DCFCE7", "on-secondary-fixed": "#00201c", "tertiary-fixed": "#ffdbce", "surface": "#F0FDFA", "dark-background": "#0B1514", "on-secondary-fixed-variant": "#005048", "outline": "#6e7977", "surface-container-highest": "#d8e5e2", "secondary-container": "#6df5e1", "surface-tint": "#006a63", "dark-primary": "#2DD4BF", "success": "#15803D", "background": "#F8FAF9", "on-surface-variant": "#3e4947", "on-tertiary-container": "#ffe5db", "tertiary-container": "#9c573a", "primary-fixed-dim": "#80d5cb", "on-tertiary-fixed": "#370e00", "primary": "#005c55", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "text-muted": "#475569", "on-background": "#121e1c", "surface-bright": "#effcf9", "outline-variant": "#bdc9c6", "error-container": "#ffdad6", "error": "#ba1a1a", "dark-text-muted": "#A7BBB8", "secondary-fixed-dim": "#4fdbc8", "dark-text": "#E6F2F0", "dark-card": "#12201F", "on-secondary-container": "#006f64", "focus-ring": "#1D4ED8", "info": "#1D4ED8", "surface-variant": "#d8e5e2", "on-primary-fixed": "#00201d", "dark-surface": "#162927", "card": "#FFFFFF", "on-tertiary-fixed-variant": "#72361b", "inverse-on-surface": "#e6f4f0", "surface-dim": "#cfddd9", "on-primary": "#ffffff", "primary-container": "#0f766e", "on-primary-container": "#a3faef", "border": "#D5E2DF", "on-error": "#ffffff", "on-surface": "#121e1c", "warning-bg": "#FEF3C7", "primary-fixed": "#9cf2e8", "secondary-fixed": "#71f8e4", "dark-primary-hover": "#5EEAD4", "danger": "#B91C1C", "inverse-primary": "#80d5cb", "secondary": "#006b5f", "tertiary": "#7f4025", "inverse-surface": "#273331", "on-tertiary": "#ffffff", "surface-container-high": "#ddebe7", "primary-hover": "#115E59", "dark-border": "#284240", "on-error-container": "#93000a", "info-bg": "#DBEAFE", "tertiary-fixed-dim": "#ffb598", "surface-container": "#e3f1ed" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1rem", "space-md": "0.75rem", "margin": "1rem", "space-2xl": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "margin-tablet": "1.5rem", "margin-desktop": "2rem", "space-xl": "1.5rem", "space-3xl": "3rem" }, "fontFamily": { "label-lg": [ "Public Sans" ], "title-lg": [ "Public Sans" ], "body-md": [ "Public Sans" ], "headline-xl-mobile": [ "Public Sans" ], "label-sm": [ "Public Sans" ], "caption": [ "Public Sans" ], "headline-md": [ "Public Sans" ], "headline-lg": [ "Public Sans" ], "headline-xl": [ "Public Sans" ], "body-lg": [ "Public Sans" ], "body-sm": [ "Public Sans" ], "label-md": [ "Public Sans" ] }, "fontSize": { "label-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-xl-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "label-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "600" } ], "caption": [ "12px", { "lineHeight": "16px", "fontWeight": "500" } ], "headline-md": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low border-r border-border z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-xl flex items-center gap-space-sm border-b border-border bg-surface-container-low"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-md text-headline-md"><span class="material-symbols-outlined text-[20px]">accessibility_new</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-primary tracking-tight">AccessibleCare</span><span class="font-caption text-caption text-text-muted">Clinical Assist Platform</span></div></div><div class="p-space-lg"><div class="px-space-sm pb-space-sm font-caption text-caption uppercase tracking-wider text-text-muted">Hospital Coordination</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary font-label-md" data-path="today-queue" href="#"><span class="material-symbols-outlined text-[20px]">view_list</span><span>Today Queue</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="calendar-shifts" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Calendar &amp; Shifts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="interpreters-directory" href="#"><span class="material-symbols-outlined text-[20px]">interpreter_mode</span><span>Interpreters Directory</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="department-requests" href="#"><span class="material-symbols-outlined text-[20px]">local_hospital</span><span>Department Requests</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="audit-settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Audit &amp; Settings</span></a></nav></div></div><div class="p-space-lg border-t border-border"><div class="bg-card border border-border rounded-lg p-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary"><span class="material-symbols-outlined text-[16px]">domain</span><span>Sample Hospital</span></div><span class="font-caption text-caption text-text-muted">OPD / Front Desk Desk 4</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-card border-b border-border z-40 px-space-2xl flex items-center justify-between shadow-[0_1px_2px_0_rgba(0,0,0,0.06)]"><div class="flex items-center gap-space-xl"><div class="flex flex-col"><h1 class="font-title-lg text-title-lg text-on-surface m-0 p-0 leading-tight">Sample Hospital</h1><span class="font-caption text-caption text-text-muted">Front Desk Coordination Unit</span></div><div class="h-6 w-px bg-border"></div><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-low border border-border text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-primary">routine</span><span>Morning Shift</span><span class="text-outline text-caption font-caption">08:00 - 16:00</span></div></div><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-xs text-text-muted font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-outline">schedule</span><span>Today: Oct 24, 2024 • 09:42 AM</span></div><div class="h-6 w-px bg-border"></div><div class="flex items-center gap-space-md"><div class="flex flex-col items-end"><span class="font-label-sm text-label-sm text-on-surface">Front Desk Staff</span><span class="font-caption text-caption text-text-muted">Desk Coordinator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background px-space-2xl py-space-xl"><div class="flex flex-col w-full">
+<!-- Top Non-Emergency Safety Banner (Mandatory Clinical Requirement) -->
+<div class="w-full bg-surface-container-high px-space-xl py-space-sm rounded-lg mb-space-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[16px] text-primary">info</span>
+<span>AccessibleCare coordination protocol: Scheduled communication assistance only. If patient presents with emergency medical distress, alert OPD triage staff immediately.</span>
+</div>
+<div class="flex items-center gap-space-xs text-text-muted font-caption text-caption">
+<span class="inline-block w-2 h-2 rounded-full bg-success"></span>
+<span>Hospital Dispatch Sync: Active</span>
+</div>
+</div>
+<!-- Priority Alert Banner for Front-Desk Staff -->
+<section class="w-full bg-danger-bg p-space-lg rounded-xl mb-space-xl shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-danger flex items-center justify-center text-on-error shrink-0">
+<span class="material-symbols-outlined text-[24px]">notification_important</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-lg text-label-lg text-danger">Immediate Action Required</span>
+<span class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-card text-danger font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>Critical Timers</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface m-0 mt-0.5">
+<strong>2 visits need immediate coordination:</strong> 1 interpreter reassignment escalation and 1 pending plan starting within 30 minutes.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full md:w-auto">
+<button class="flex-1 md:flex-initial h-11 px-space-lg rounded-lg bg-danger text-on-error hover:bg-red-800 transition-colors font-label-md text-label-md flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">emergency_home</span>
+<span>Review Escalated (1)</span>
+</button>
+<button class="flex-1 md:flex-initial h-11 px-space-lg rounded-lg bg-card text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center justify-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Acknowledge Alarms</span>
+</button>
+</div>
+</section>
+<!-- Filter Controls & Operational Bar -->
+<section class="w-full bg-card rounded-xl p-space-lg mb-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Search Field -->
+<div class="relative w-full xl:w-96">
+<label class="sr-only" for="queue-search">Search by patient, MRN, or clinician</label>
+<span class="absolute inset-y-0 left-0 pl-space-md flex items-center pointer-events-none text-text-muted">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</span>
+<input class="w-full h-11 pl-10 pr-space-md bg-surface rounded-lg font-body-md text-body-md text-on-surface placeholder:text-text-muted focus:outline-none focus:bg-card shadow-sm" id="queue-search" placeholder="Search patient, MRN, or clinician..." type="search"/>
+</div>
+<!-- Quick Summary Counts and System Status -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Showing 7 visits</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-danger-bg text-danger font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>2 urgent</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-success-bg text-success font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>4 confirmed</span>
+</div>
+<button class="h-11 px-space-md rounded-lg bg-surface text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>Sync Feed</span>
+</button>
+</div>
+</div>
+<!-- Filter Pills Row -->
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md pt-space-xs">
+<!-- Department Selector -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-caption text-caption uppercase tracking-wider text-text-muted mr-space-xs">Department:</span>
+<button class="px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm" type="button">All</button>
+<button class="px-space-md py-1 rounded-full bg-surface text-on-surface-variant hover:bg-surface-container-high font-body-sm text-body-sm" type="button">ENT &amp; Audiology</button>
+<button class="px-space-md py-1 rounded-full bg-surface text-on-surface-variant hover:bg-surface-container-high font-body-sm text-body-sm" type="button">General Medicine</button>
+<button class="px-space-md py-1 rounded-full bg-surface text-on-surface-variant hover:bg-surface-container-high font-body-sm text-body-sm" type="button">Ophthalmology</button>
+<button class="px-space-md py-1 rounded-full bg-surface text-on-surface-variant hover:bg-surface-container-high font-body-sm text-body-sm" type="button">Orthopaedics</button>
+<button class="px-space-md py-1 rounded-full bg-surface text-on-surface-variant hover:bg-surface-container-high font-body-sm text-body-sm" type="button">Cardiology</button>
+</div>
+<!-- Status Dropdown or Filter -->
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
+<label class="font-caption text-caption uppercase tracking-wider text-text-muted" for="status-filter">Status:</label>
+<select class="h-9 px-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none" id="status-filter">
+<option>All statuses (7)</option>
+<option>Escalated (1)</option>
+<option>At risk (1)</option>
+<option>Plan pending (1)</option>
+<option>Offers out (1)</option>
+<option>Accepted awaiting staff (1)</option>
+<option>Confirmed (2)</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Main Content Area: Split Table and Contextual Inspection Pane -->
+<div class="w-full grid grid-cols-1 xl:grid-cols-12 gap-space-xl items-start">
+<!-- Queue Data Table (9 Cols on XL) -->
+<div class="xl:col-span-8 bg-card rounded-xl overflow-hidden shadow-sm">
+<div class="px-space-xl py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">table_rows</span>
+<h2 class="font-headline-md text-headline-md text-on-surface m-0">Live Intake &amp; Coordination Queue</h2>
+</div>
+<span class="font-caption text-caption text-text-muted">Sort: Urgency Priority (Default)</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm pl-space-lg pr-space-sm w-36" scope="col">Time / Window</th>
+<th class="py-space-sm px-space-sm" scope="col">Patient</th>
+<th class="py-space-sm px-space-sm" scope="col">Dept / Clinic</th>
+<th class="py-space-sm px-space-sm" scope="col">Language Plan</th>
+<th class="py-space-sm px-space-sm" scope="col">Status</th>
+<th class="py-space-sm px-space-sm" scope="col">Updated</th>
+<th class="py-space-sm pl-space-sm pr-space-lg text-right" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-surface-container-high">
+<!-- Row 1: ESCALATED -->
+<tr class="bg-danger-bg/40 hover:bg-danger-bg/70 transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-danger">09:50 AM</span>
+<span class="font-caption text-caption text-text-muted">Window: 15m left</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rahul K.</span>
+<span class="font-caption text-caption text-text-muted">MRN: 884-219</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Orthopaedics</span>
+<span class="font-caption text-caption text-text-muted">Room 312 • Dr. Patel</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-danger font-medium">Urgent reassignment requested</span>
+<span class="font-caption text-caption text-danger">Interpreter no-show alert</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-danger-bg text-danger font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">error</span>
+<span>Escalated</span>
+</span>
+</td>
+<td class="py-space-md px-space-sm align-top font-caption text-caption text-text-muted whitespace-nowrap">
+                2 mins ago
+              </td>
+<td class="py-space-md pl-space-sm pr-space-lg align-top text-right">
+<button class="h-9 px-space-md rounded-lg bg-danger text-on-error hover:bg-red-800 transition-colors font-label-sm text-label-sm inline-flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">person_add</span>
+<span>Reassign</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: AT RISK -->
+<tr class="bg-warning-bg/40 hover:bg-warning-bg/70 transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-warning">10:15 AM</span>
+<span class="font-caption text-caption text-text-muted">Starts in 33m</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Priya N.</span>
+<span class="font-caption text-caption text-text-muted">MRN: 742-009</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Cardiology</span>
+<span class="font-caption text-caption text-text-muted">Room 108 • Dr. Joshi</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">ISL interpreter offer sent</span>
+<span class="font-caption text-caption text-warning">Pending pickup 14m</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-warning-bg text-warning font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>At risk</span>
+</span>
+</td>
+<td class="py-space-md px-space-sm align-top font-caption text-caption text-text-muted whitespace-nowrap">
+                12 mins ago
+              </td>
+<td class="py-space-md pl-space-sm pr-space-lg align-top text-right">
+<button class="h-9 px-space-md rounded-lg bg-surface text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm inline-flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Escalate Call</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: OFFERS OUT -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">10:45 AM</span>
+<span class="font-caption text-caption text-text-muted">Slot 30m</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Anand V.</span>
+<span class="font-caption text-caption text-text-muted">MRN: 631-502</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">General Medicine</span>
+<span class="font-caption text-caption text-text-muted">Clinic OPD-3 • Dr. Verma</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">ISL in-person coordination</span>
+<span class="font-caption text-caption text-text-muted">Dispatched to roster 2</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-info-bg text-info font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">outbox</span>
+<span>Offers out</span>
+</span>
+</td>
+<td class="py-space-md px-space-sm align-top font-caption text-caption text-text-muted whitespace-nowrap">
+                25 mins ago
+              </td>
+<td class="py-space-md pl-space-sm pr-space-lg align-top text-right">
+<button class="h-9 px-space-md rounded-lg bg-surface text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm inline-flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Details</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: ACCEPTED AWAITING STAFF -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">11:00 AM</span>
+<span class="font-caption text-caption text-text-muted">Slot 45m</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Deepa M.</span>
+<span class="font-caption text-caption text-text-muted">MRN: 923-118</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Ophthalmology</span>
+<span class="font-caption text-caption text-text-muted">Room 214 • Dr. Sengupta</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">In-person ISL interpreter</span>
+<span class="font-caption text-caption text-text-muted">Interpreter: S. Ramanathan</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-info-bg text-info font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">how_to_reg</span>
+<span>Accepted awaiting staff</span>
+</span>
+</td>
+<td class="py-space-md px-space-sm align-top font-caption text-caption text-text-muted whitespace-nowrap">
+                30 mins ago
+              </td>
+<td class="py-space-md pl-space-sm pr-space-lg align-top text-right">
+<button class="h-9 px-space-md rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-sm text-label-sm inline-flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Staff Confirm</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: CONFIRMED (Meena S., Dr. Rao, Karthik, Room 204) -->
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-high transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">11:30 AM</span>
+<span class="font-caption text-caption text-text-muted">Slot 30m</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Meena S.</span>
+<span class="font-caption text-caption text-text-muted">MRN: 412-880</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">ENT &amp; Audiology</span>
+<span class="font-caption text-caption text-text-muted">Room 204 • Dr. Rao</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">In-person ISL interpreter</span>
+<span class="font-caption text-caption text-primary">Assigned: Karthik (On-site)</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-success-bg text-success font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Confirmed</span>
+</span>
+</td>
+<td class="py-space-md px-space-sm align-top font-caption text-caption text-text-muted whitespace-nowrap">
+                45 mins ago
+              </td>
+<td class="py-space-md pl-space-sm pr-space-lg align-top text-right">
+<button class="h-9 px-space-md rounded-lg bg-surface text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm inline-flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span>Open Visit</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: VIDEO CONFIRMED -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">12:00 PM</span>
+<span class="font-caption text-caption text-text-muted">Slot 30m</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kavita R.</span>
+<span class="font-caption text-caption text-text-muted">MRN: 519-743</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">General Medicine</span>
+<span class="font-caption text-caption text-text-muted">Room 102 • Dr. Thomas</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Video interpreter on clinic tablet</span>
+<span class="font-caption text-caption text-text-muted">Device Tab-ENT-4 Ready</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-success-bg text-success font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span>Video confirmed</span>
+</span>
+</td>
+<td class="py-space-md px-space-sm align-top font-caption text-caption text-text-muted whitespace-nowrap">
+                1 hr ago
+              </td>
+<td class="py-space-md pl-space-sm pr-space-lg align-top text-right">
+<button class="h-9 px-space-md rounded-lg bg-surface text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm inline-flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">phonelink_setup</span>
+<span>Test Tablet</span>
+</button>
+</td>
+</tr>
+<!-- Row 7: PLAN PENDING -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">01:15 PM</span>
+<span class="font-caption text-caption text-text-muted">Slot 45m</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Vikram B.</span>
+<span class="font-caption text-caption text-text-muted">MRN: 310-992</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Orthopaedics</span>
+<span class="font-caption text-caption text-text-muted">Room 310 • Dr. Patel</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Awaiting modality choice</span>
+<span class="font-caption text-caption text-text-muted">Patient questionnaire queued</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm align-top">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-info-bg text-info font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">hourglass_empty</span>
+<span>Plan pending</span>
+</span>
+</td>
+<td class="py-space-md px-space-sm align-top font-caption text-caption text-text-muted whitespace-nowrap">
+                1 hr ago
+              </td>
+<td class="py-space-md pl-space-sm pr-space-lg align-top text-right">
+<button class="h-9 px-space-md rounded-lg bg-surface text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm inline-flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">assignment</span>
+<span>Assign Plan</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Bottom Quick Status Bar -->
+<div class="px-space-xl py-space-sm bg-surface-container-low flex items-center justify-between font-caption text-caption text-text-muted">
+<div class="flex items-center gap-space-md">
+<span>Total registered today: <strong>14 Deaf patients</strong></span>
+<span>•</span>
+<span>Interpreter coverage: <strong>92% on-site / remote</strong></span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">Export Daily Roster</button>
+</div>
+</div>
+</div>
+<!-- Right Side Inspection Panel: Escalation Handler & Focus Visit (4 Cols on XL) -->
+<aside class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Active Escalation Action Card -->
+<div class="bg-card rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs text-danger font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">crisis_alert</span>
+<span>Escalation Case #441</span>
+</div>
+<span class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-danger-bg text-danger font-caption text-caption">
+            Priority 1
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs bg-surface p-space-md rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Patient Rahul K.</span>
+<span class="font-caption text-caption text-text-muted">Dept: Orthopaedics</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant m-0">
+            Assigned interpreter delayed in transit. Appointment starts at <strong>09:50 AM (in 8 mins)</strong>.
+          </p>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface">Rapid Reassignment Protocols:</label>
+<button class="w-full h-11 px-space-md rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-md text-label-md flex items-center justify-between" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+<span>Switch to On-demand Video ISL</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="w-full h-11 px-space-md rounded-lg bg-surface text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center justify-between" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">person_pin_circle</span>
+<span>Pull On-duty Floater: Suresh V.</span>
+</div>
+<span class="font-caption text-caption text-primary">Avail (Floor 2)</span>
+</button>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-text-muted font-caption text-caption">
+<span>Automatic audit log enabled</span>
+<a class="text-primary hover:underline" href="#">View timeline</a>
+</div>
+</div>
+<!-- Focused Next Patient Inspection Card (Meena S. & Karthik) -->
+<div class="bg-card rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">medical_information</span>
+<span>Upcoming Confirmed Visit</span>
+</div>
+<span class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-success-bg text-success font-caption text-caption">
+            Confirmed
+          </span>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary font-headline-md text-headline-md shrink-0">
+            MS
+          </div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface">Meena S.</span>
+<span class="font-body-sm text-body-sm text-text-muted">Deaf Patient • ISL Preferred</span>
+<span class="font-caption text-caption text-text-muted">MRN: 412-880 • OPD Registration 08:30 AM</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm bg-surface p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-text-muted">Consulting Doctor</span>
+<span class="font-label-md text-label-md text-on-surface">Dr. Rao</span>
+<span class="font-caption text-caption text-text-muted">ENT &amp; Audiology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-text-muted">Location</span>
+<span class="font-label-md text-label-md text-on-surface">Room 204</span>
+<span class="font-caption text-caption text-text-muted">OPD Building B</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-md rounded-lg bg-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">interpreter_mode</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Interpreter: Karthik</span>
+<span class="font-caption text-caption text-success font-semibold">Checked In</span>
+</div>
+<span class="font-caption text-caption text-text-muted">ISL Certified Level 3 • Stby at Desk 4</span>
+</div>
+</div>
+<!-- AI Language Brief Indicator (Design Token Compliant) -->
+<div class="p-space-md rounded-lg bg-surface flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">arrow_back_ios_new</span>
+<span>Clinical Coordination Brief</span>
+</div>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-card text-text-muted font-caption text-caption">
+              AI-drafted
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant m-0">
+            Patient prefers high visual gesture pacing. Audiometry charts to be displayed simultaneously with sign interpretation.
+          </p>
+<div class="pt-space-xs flex justify-end">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">Review &amp; Approve</button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 h-11 px-space-md rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-md text-label-md flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+<span>Page Patient &amp; Doctor</span>
+</button>
+<button class="h-11 px-space-md rounded-lg bg-surface text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</aside>
+</div>
+</div></main></div></body></html>

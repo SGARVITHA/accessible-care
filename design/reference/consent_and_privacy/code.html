@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#72361b", "secondary-container": "#6df5e1", "tertiary": "#7f4025", "tertiary-fixed-dim": "#ffb598", "surface-tint": "#006a63", "primary-fixed-dim": "#80d5cb", "on-tertiary-fixed": "#370e00", "surface": "#F0FDFA", "on-secondary-fixed": "#00201c", "warning": "#B45309", "on-primary": "#ffffff", "text-muted": "#475569", "inverse-surface": "#273331", "dark-text-muted": "#A7BBB8", "card": "#FFFFFF", "error": "#ba1a1a", "outline-variant": "#bdc9c6", "primary-fixed": "#9cf2e8", "dark-primary": "#2DD4BF", "error-container": "#ffdad6", "tertiary-fixed": "#ffdbce", "warning-bg": "#FEF3C7", "success-bg": "#DCFCE7", "outline": "#6e7977", "success": "#15803D", "on-primary-fixed": "#00201d", "dark-primary-hover": "#5EEAD4", "inverse-on-surface": "#e6f4f0", "on-primary-fixed-variant": "#00504a", "dark-card": "#12201F", "on-error-container": "#93000a", "info": "#1D4ED8", "surface-dim": "#cfddd9", "on-background": "#121e1c", "inverse-primary": "#80d5cb", "danger-bg": "#FEE2E2", "secondary": "#006b5f", "on-secondary-fixed-variant": "#005048", "on-surface": "#121e1c", "dark-text": "#E6F2F0", "background": "#F8FAF9", "on-surface-variant": "#3e4947", "surface-container-low": "#e9f7f3", "primary-hover": "#115E59", "primary-container": "#0f766e", "secondary-fixed-dim": "#4fdbc8", "on-tertiary-container": "#ffe5db", "border": "#D5E2DF", "dark-surface": "#162927", "surface-bright": "#effcf9", "tertiary-container": "#9c573a", "on-secondary": "#ffffff", "surface-variant": "#d8e5e2", "on-tertiary": "#ffffff", "dark-border": "#284240", "on-secondary-container": "#006f64", "surface-container": "#e3f1ed", "on-primary-container": "#a3faef", "on-error": "#ffffff", "danger": "#B91C1C", "surface-container-highest": "#d8e5e2", "dark-background": "#0B1514", "info-bg": "#DBEAFE", "surface-container-high": "#ddebe7", "primary": "#005c55", "secondary-fixed": "#71f8e4", "focus-ring": "#1D4ED8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-tablet": "1.5rem", "space-lg": "1rem", "gutter": "1rem", "space-xl": "1.5rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-2xl": "2rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-3xl": "3rem" }, "fontFamily": { "body-lg": ["Public Sans"], "label-md": ["Public Sans"], "headline-md": ["Public Sans"], "caption": ["Public Sans"], "headline-xl-mobile": ["Public Sans"], "headline-lg": ["Public Sans"], "label-sm": ["Public Sans"], "title-lg": ["Public Sans"], "headline-xl": ["Public Sans"], "body-sm": ["Public Sans"], "label-lg": ["Public Sans"], "body-md": ["Public Sans"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "caption": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["13px", { "lineHeight": "18px", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center min-w-0 gap-space-xs"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container active:bg-surface-variant transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-lg text-title-lg text-on-surface truncate">Consent &amp; Privacy</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Switch language. Current: English" class="min-h-[44px] px-space-sm flex items-center justify-center gap-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-variant active:bg-surface-container-high transition-colors font-label-sm text-label-sm" type="button"><span class="material-symbols-outlined text-[18px] text-primary">translate</span><span>EN</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative w-full pt-16 pb-safe px-margin bg-background min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Patient Profile Header & Status Context -->
+<section class="flex flex-col gap-space-sm pt-space-xs pb-space-md">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary">person</span>
+<span class="font-label-md text-label-md">Patient: Meena</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Secure Record</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight">Consent &amp; Privacy</h2>
+<p class="font-body-lg text-body-lg text-text-muted">
+        Choose how Sample Hospital and interpreters can use your information. You can change these choices anytime.
+      </p>
+</div>
+</section>
+<!-- Hospital Privacy Notice Card -->
+<section class="mb-space-lg">
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[24px]">description</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg text-on-surface">Hospital Privacy Notice</h3>
+<span class="font-caption text-caption text-text-muted">Version 2.4 • Updated January 2025</span>
+</div>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface">
+        Sample Hospital keeps your healthcare information private. We only share details needed to arrange sign language interpreters for your doctor visits.
+      </p>
+<button aria-controls="full-policy-drawer" aria-expanded="false" class="min-h-[44px] flex items-center justify-between py-space-xs text-primary font-label-lg text-label-lg hover:text-primary-hover active:text-primary-hover transition-colors text-left" id="policy-toggle-btn" type="button">
+<span class="underline">Read full hospital privacy policy</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200" id="policy-arrow">expand_more</span>
+</button>
+<div class="hidden flex-col gap-space-sm pt-space-sm bg-surface rounded-lg p-space-md text-on-surface" id="full-policy-drawer">
+<p class="font-body-md text-body-md">
+          1. Data Protection: Your medical records stay securely stored within Sample Hospital systems under clinical compliance laws.
+        </p>
+<p class="font-body-md text-body-md">
+          2. Limited Sharing: Certified interpreters only receive appointment coordinates and communication preferences. No clinical test results or treatment history are shared.
+        </p>
+<p class="font-body-md text-body-md">
+          3. Immediate Rights: You have the right to request a complete export of your preferences or delete your accessibility file at any registration desk.
+        </p>
+</div>
+</div>
+</section>
+<!-- Consent Toggles Group -->
+<section aria-label="Privacy and sharing settings" class="flex flex-col gap-space-md mb-space-xl">
+<div class="flex items-center justify-between">
+<h3 class="font-title-lg text-title-lg text-on-surface">Your Choices</h3>
+<span class="font-caption text-caption text-text-muted">Updated in real-time</span>
+</div>
+<!-- Toggle 1: Profile -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[24px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<label class="font-title-lg text-title-lg text-on-surface cursor-pointer select-none" for="toggle-profile">
+              Save my communication profile
+            </label>
+<p class="font-body-lg text-body-lg text-text-muted mt-space-xs">
+              Remember your sign language and visit preferences for your future appointments.
+            </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center min-h-[44px]">
+<button aria-checked="true" class="relative inline-flex h-8 w-14 shrink-0 cursor-pointer rounded-full bg-primary-container p-1 transition-colors duration-200 ease-in-out focus:outline-none" id="toggle-profile" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="sr-only">Save my communication profile</span>
+<span class="translate-x-6 inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toggle 2: SMS -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[24px]">sms</span>
+</div>
+<div class="flex flex-col min-w-0">
+<label class="font-title-lg text-title-lg text-on-surface cursor-pointer select-none" for="toggle-sms">
+              Contact me by SMS
+            </label>
+<p class="font-body-lg text-body-lg text-text-muted mt-space-xs">
+              Send text messages and video links about your appointments to your mobile number.
+            </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center min-h-[44px]">
+<button aria-checked="true" class="relative inline-flex h-8 w-14 shrink-0 cursor-pointer rounded-full bg-primary-container p-1 transition-colors duration-200 ease-in-out focus:outline-none" id="toggle-sms" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="sr-only">Contact me by SMS</span>
+<span class="translate-x-6 inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toggle 3: Staff Visibility -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[24px]">visibility</span>
+</div>
+<div class="flex flex-col min-w-0">
+<label class="font-title-lg text-title-lg text-on-surface cursor-pointer select-none" for="toggle-staff">
+              Show my need to hospital staff
+            </label>
+<p class="font-body-lg text-body-lg text-text-muted mt-space-xs">
+              Let clinic doctors and reception desks know that you need a sign language interpreter.
+            </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center min-h-[44px]">
+<button aria-checked="true" class="relative inline-flex h-8 w-14 shrink-0 cursor-pointer rounded-full bg-primary-container p-1 transition-colors duration-200 ease-in-out focus:outline-none" id="toggle-staff" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="sr-only">Show my need to hospital staff</span>
+<span class="translate-x-6 inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toggle 4: Interpreter Details -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[24px]">handshake</span>
+</div>
+<div class="flex flex-col min-w-0">
+<label class="font-title-lg text-title-lg text-on-surface cursor-pointer select-none" for="toggle-interpreter">
+              Share limited details with my interpreter
+            </label>
+<p class="font-body-lg text-body-lg text-text-muted mt-space-xs">
+              Give your assigned interpreter only your first name and clinic room number.
+            </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center min-h-[44px]">
+<button aria-checked="true" class="relative inline-flex h-8 w-14 shrink-0 cursor-pointer rounded-full bg-primary-container p-1 transition-colors duration-200 ease-in-out focus:outline-none" id="toggle-interpreter" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="sr-only">Share limited details with my interpreter</span>
+<span class="translate-x-6 inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toggle 5: AI-Assisted (Off by default) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[24px]">auto_awesome</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<label class="font-title-lg text-title-lg text-on-surface cursor-pointer select-none" for="toggle-ai">
+                Allow AI-assisted drafting
+              </label>
+</div>
+<div class="mt-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+                Off by default • Optional
+              </span>
+</div>
+<p class="font-body-lg text-body-lg text-text-muted mt-space-xs">
+              Let hospital software draft visit notes and summary messages for human review.
+            </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center min-h-[44px]">
+<button aria-checked="false" class="relative inline-flex h-8 w-14 shrink-0 cursor-pointer rounded-full bg-surface-variant p-1 transition-colors duration-200 ease-in-out focus:outline-none" id="toggle-ai" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="sr-only">Allow AI-assisted drafting</span>
+<span class="translate-x-0 inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Withdrawal Section -->
+<section class="mb-space-xl">
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-warning-bg flex items-center justify-center shrink-0 text-warning">
+<span class="material-symbols-outlined text-[24px]">do_not_disturb_on</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg text-on-surface">Withdraw all consent</h3>
+<p class="font-body-lg text-body-lg text-text-muted mt-space-xs">
+            Stop sharing your communication preferences. This takes two taps to confirm and removes your saved choices.
+          </p>
+</div>
+</div>
+<!-- Action Button (Tap 1) -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="min-h-[48px] w-full px-space-lg rounded-lg bg-surface-container-high text-danger hover:bg-danger-bg active:bg-danger-bg transition-colors flex items-center justify-center gap-space-sm font-label-lg text-label-lg text-center" id="withdraw-step-1-btn" onclick="initiateWithdraw()" type="button">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+<span>Withdraw consent...</span>
+</button>
+<!-- Confirmation Prompt (Tap 2) -->
+<div class="hidden flex-col gap-space-md p-space-md rounded-lg bg-danger-bg text-on-surface mt-space-xs" id="withdraw-confirm-box">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-danger text-[22px] shrink-0 mt-0.5">warning</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold">
+              Are you sure? Sample Hospital will delete your saved accessibility preferences immediately.
+            </p>
+</div>
+<div class="flex gap-space-sm">
+<button class="min-h-[48px] flex-1 px-space-md rounded-lg bg-danger text-on-primary font-label-lg text-label-lg hover:bg-danger/90 transition-colors flex items-center justify-center gap-space-xs" onclick="confirmWithdrawal()" type="button">
+<span class="material-symbols-outlined text-[20px]">check</span>
+<span>Yes, withdraw</span>
+</button>
+<button class="min-h-[48px] px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg hover:bg-surface-variant transition-colors flex items-center justify-center" onclick="cancelWithdrawal()" type="button">
+              Keep my choices
+            </button>
+</div>
+</div>
+<div class="hidden items-center gap-space-sm p-space-md rounded-lg bg-success-bg text-success font-label-md text-label-md" id="withdraw-success-msg">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Consent has been withdrawn. Your choices are reset.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Primary Save Action Button -->
+<section class="mb-space-xl">
+<button class="min-h-[48px] w-full px-space-xl py-space-md rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-hover active:bg-primary-hover transition-colors flex items-center justify-center gap-space-sm" id="save-choices-btn" onclick="saveConsentChoices()" type="button">
+<span class="material-symbols-outlined text-[22px]">save</span>
+<span>Save privacy choices</span>
+</button>
+<div class="hidden mt-space-sm items-center justify-center gap-space-xs p-space-sm rounded-lg bg-success-bg text-success font-label-md text-label-md" id="save-toast">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span>Your privacy settings have been updated for Sample Hospital.</span>
+</div>
+</section>
+<!-- Persistent Emergency Notice Box -->
+<section aria-label="Urgent medical assistance disclaimer" class="mt-space-xs">
+<div class="rounded-xl bg-danger-bg p-space-lg flex items-start gap-space-md shadow-sm">
+<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-danger text-[24px]">emergency</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h4 class="font-title-lg text-title-lg text-danger font-bold">Not for emergencies</h4>
+<p class="font-body-lg text-body-lg text-danger">
+          If you need urgent help, go to the Emergency desk at Sample Hospital or ask someone near you to help.
+        </p>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function toggleSwitch(btn) {
+    const isChecked = btn.getAttribute('aria-checked') === 'true';
+    const thumb = btn.querySelector('span:nth-child(2)');
+    
+    if (isChecked) {
+      btn.setAttribute('aria-checked', 'false');
+      btn.classList.remove('bg-primary-container');
+      btn.classList.add('bg-surface-variant');
+      thumb.classList.remove('translate-x-6');
+      thumb.classList.add('translate-x-0');
+    } else {
+      btn.setAttribute('aria-checked', 'true');
+      btn.classList.remove('bg-surface-variant');
+      btn.classList.add('bg-primary-container');
+      thumb.classList.remove('translate-x-0');
+      thumb.classList.add('translate-x-6');
+    }
+  }
+
+  // Hospital Policy Expander
+  const policyToggleBtn = document.getElementById('policy-toggle-btn');
+  const policyDrawer = document.getElementById('full-policy-drawer');
+  const policyArrow = document.getElementById('policy-arrow');
+
+  if (policyToggleBtn && policyDrawer) {
+    policyToggleBtn.addEventListener('click', () => {
+      const isExpanded = policyToggleBtn.getAttribute('aria-expanded') === 'true';
+      if (isExpanded) {
+        policyToggleBtn.setAttribute('aria-expanded', 'false');
+        policyDrawer.classList.add('hidden');
+        policyDrawer.classList.remove('flex');
+        policyArrow.classList.remove('rotate-180');
+      } else {
+        policyToggleBtn.setAttribute('aria-expanded', 'true');
+        policyDrawer.classList.remove('hidden');
+        policyDrawer.classList.add('flex');
+        policyArrow.classList.add('rotate-180');
+      }
+    });
+  }
+
+  // Quick Withdrawal 2-tap Flow
+  function initiateWithdraw() {
+    const confirmBox = document.getElementById('withdraw-confirm-box');
+    const step1Btn = document.getElementById('withdraw-step-1-btn');
+    if (confirmBox && step1Btn) {
+      confirmBox.classList.remove('hidden');
+      confirmBox.classList.add('flex');
+      step1Btn.classList.add('hidden');
+    }
+  }
+
+  function cancelWithdrawal() {
+    const confirmBox = document.getElementById('withdraw-confirm-box');
+    const step1Btn = document.getElementById('withdraw-step-1-btn');
+    if (confirmBox && step1Btn) {
+      confirmBox.classList.add('hidden');
+      confirmBox.classList.remove('flex');
+      step1Btn.classList.remove('hidden');
+    }
+  }
+
+  function confirmWithdrawal() {
+    const confirmBox = document.getElementById('withdraw-confirm-box');
+    const successMsg = document.getElementById('withdraw-success-msg');
+    
+    // Reset all switches to false
+    const switches = document.querySelectorAll('[role="switch"]');
+    switches.forEach(sw => {
+      if (sw.getAttribute('aria-checked') === 'true') {
+        toggleSwitch(sw);
+      }
+    });
+
+    if (confirmBox && successMsg) {
+      confirmBox.classList.add('hidden');
+      confirmBox.classList.remove('flex');
+      successMsg.classList.remove('hidden');
+      successMsg.classList.add('flex');
+    }
+  }
+
+  // Save Choices Interaction
+  function saveConsentChoices() {
+    const saveBtn = document.getElementById('save-choices-btn');
+    const toast = document.getElementById('save-toast');
+    if (saveBtn && toast) {
+      saveBtn.setAttribute('aria-busy', 'true');
+      const originalText = saveBtn.innerHTML;
+      saveBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span><span>Saving preferences...</span>';
+      
+      setTimeout(() => {
+        saveBtn.removeAttribute('aria-busy');
+        saveBtn.innerHTML = originalText;
+        toast.classList.remove('hidden');
+        toast.classList.add('flex');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+        }, 4000);
+      }, 600);
+    }
+  }
+</script></main></body></html>
